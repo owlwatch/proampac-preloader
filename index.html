@@ -31,12 +31,12 @@
             <style>
                 .preloader__circle {
                     transform-origin: 50% 50%;
-                    animation: 4s linear infinite preloader-rotate;
+                    animation: 2s linear infinite preloader-rotate;
                 }
                 .preloader__circle circle {
                     transform-origin: 50% 50%;
                     stroke-dasharray: 251;
-                    animation: 2s ease-in-out infinite both preloader-dash,
+                    animation: 4.5s ease-in-out infinite both preloader-dash,
                                preloader-strokechanger 7s infinite;
                 }
                 .preloader__shapes > * {
@@ -135,11 +135,11 @@
                     }
                 }
                 @keyframes preloader-dash {
-                    0%, 25% {
+                    0%, 5% {
                         transform: rotate(0);
                         stroke-dashoffset: 249;
                     }
-                    50%, 75% {
+                    50%, 55% {
                         transform: rotate(45deg);
                         stroke-dashoffset: 66.666;
                     }
