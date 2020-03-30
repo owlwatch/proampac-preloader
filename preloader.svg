@@ -8,16 +8,19 @@
     <style>
         .preloader__circle {
             transform-origin: 50% 50%;
-            fill: #fff;
-            animation: preloader-dash 2.5s infinite,
-                       preloader-rotate 3s infinite,
-                       preloader-strokechanger 7s infinite;
+            animation: 4s linear infinite preloader-rotate;
+        }
+        .preloader__circle circle {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 251;
+            animation: 2s ease-in-out infinite both preloader-dash,
+                        preloader-strokechanger 7s infinite;
         }
         .preloader__shapes > * {
             opacity: 0;
             transform-origin: 50% 50%;
             animation: preloader-shapefader 13.5s infinite, 
-                       preloader-colorchanger 7s infinite;
+                        preloader-colorchanger 7s infinite;
         }
         .preloader__shape1 {
             animation-delay: 0s, 0s;
@@ -67,6 +70,20 @@
             }
         }
         @-webkit-keyframes preloader-rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+            }
+        }
+        @keyframes preloader-rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            }
             100% {
                 -webkit-transform: rotate(360deg);
                         transform: rotate(360deg);
@@ -95,17 +112,17 @@
             }
         }
         @keyframes preloader-dash {
-            0% {
-                stroke-dasharray: 1, 300;
-                stroke-dashoffset: 0;
+            0%, 25% {
+                transform: rotate(0);
+                stroke-dashoffset: 249;
             }
-            50% {
-                stroke-dasharray: 180, 300;
-                stroke-dashoffset: 70;
+            50%, 75% {
+                transform: rotate(45deg);
+                stroke-dashoffset: 66.666;
             }
             100% {
-                stroke-dasharray: 180, 300;
-                stroke-dashoffset: -248;
+                transform: rotate(360deg);
+                stroke-dashoffset: 249;
             }
         }
 
