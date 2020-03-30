@@ -33,7 +33,7 @@
                     transform-origin: 50% 50%;
                     fill: #fff;
                     animation: preloader-dash 2.5s infinite,
-                               preloader-rotate 2.55s infinite,
+                               preloader-rotate 3s infinite,
                                preloader-strokechanger 7s infinite;
                 }
                 .preloader__shapes > * {
@@ -119,16 +119,16 @@
                 }
                 @keyframes preloader-dash {
                     0% {
-                        stroke-dasharray: 1, 232.5;
+                        stroke-dasharray: 1, 300;
                         stroke-dashoffset: 0;
                     }
                     50% {
-                        stroke-dasharray: 139.5, 232.5;
-                        stroke-dashoffset: -54.25;
+                        stroke-dasharray: 180, 300;
+                        stroke-dashoffset: 70;
                     }
                     100% {
-                        stroke-dasharray: 139.5, 232.5;
-                        stroke-dashoffset: -192;
+                        stroke-dasharray: 180, 300;
+                        stroke-dashoffset: -248;
                     }
                 }
         
