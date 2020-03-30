@@ -90,27 +90,28 @@
             }
         }
         @keyframes preloader-colorchanger {
-            0% {
-                fill: rgba(0,182,228);
+                0% {
+                    fill: rgba(136,197,84);
+                    
+                }
+                50% {
+                    fill: rgba(0,182,228);
+                }
+                100% {
+                    fill: rgba(136,197,84);
+                }
             }
-            50% {
-                fill: rgba(136,197,84);
+            @keyframes preloader-strokechanger {
+                0% {
+                    stroke: rgba(136,197,84);
+                }
+                50% {
+                    stroke: rgba(0,182,228);
+                }
+                100% {
+                    stroke: rgba(136,197,84);
+                }
             }
-            100% {
-                fill: rgba(0,182,228);
-            }
-        }
-        @keyframes preloader-strokechanger {
-            0% {
-                stroke: rgba(136,197,84);
-            }
-            50% {
-                stroke: rgba(0,182,228);
-            }
-            100% {
-                stroke: rgba(136,197,84);
-            }
-        }
         @keyframes preloader-dash {
             0%, 5% {
                 transform: rotate(0);
