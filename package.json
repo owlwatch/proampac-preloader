@@ -1,0 +1,23 @@
+{
+  "name": "proampac-loader",
+  "version": "1.0.0",
+  "description": "Preloader animation for ProAmpac",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx svgo preloader.svg -o preloader.min.svg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owlwatch/proampac-preloader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owlwatch/proampac-preloader/issues"
+  },
+  "homepage": "https://github.com/owlwatch/proampac-preloader#readme",
+  "dependencies": {
+    "svgo": "^1.3.2"
+  }
+}
